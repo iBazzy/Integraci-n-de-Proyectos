@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  ></ion-back-button>
+      <ion-title>Apadrinar animal</ion-title>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="cartita" *ngIf="animalAcitvo">
+    <img alt="Silhouette of mountains" [src]="animalAcitvo.imagen"  />
+    <ion-card-header>
+      <ion-card-title style="text-align: center; color: rgb(0, 119, 255);">
+        ELEGISTE A: <h2 style="text-align: center;color: rgb(255, 157, 0);">{{animalAcitvo.nombre}}</h2></ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content style="text-align: center; color: white;">
+      ¡Genial! Ya seleccionaste al animal que quieres apadrinar. Estás a pocos segundos de contribuir directamente al bienestar de uno de los animales más emblemáticos de Buin Zoo. Elige tu plan de apadrinamiento, finaliza el proceso y transfórmate oficialmente en su padrino o madrina.
+
+
+
+      <ion-list >
+
+  
+  
+        <ion-item color="warning" > 
+          <ion-icon name="cash-outline"></ion-icon>
+          <ion-select style="color: rgb(0, 0, 0);" interface="popover" placeholder="Elige tu aporte">
+            <ion-select-option >Aporte Unico</ion-select-option>
+            <ion-select-option >Aporte Mensual</ion-select-option>
+            
+          </ion-select>
+        </ion-item>
+      
+        
+      
+      </ion-list>
+    </ion-card-content>
+
+    
+  </ion-card>
+
+
+
+</ion-content>

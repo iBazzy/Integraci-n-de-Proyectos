@@ -1,0 +1,72 @@
+
+<ion-content>
+
+  <ion-grid class="grid1">
+
+    <ion-row class="row1">
+        <ion-col>
+
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="row2">
+        <ion-col>
+
+        </ion-col>
+    </ion-row>
+
+</ion-grid>
+
+<ion-slide>
+    <div class="contaier-login">
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <h1 style="color: rgb(255, 255, 255);">𝐼𝓃𝒾𝒸𝒾𝒶𝓇 𝒮𝑒𝓈𝒾ó𝓃</h1>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <form [formGroup]="formularioLogin" (ngSubmit)="logearse()">
+                        <ion-list>
+
+                            <ion-item>
+                                <ion-icon name="person" class="icon-login"></ion-icon>
+                                <ion-input name="user" type="text" required placeholder="𝕌𝕤𝕦𝕒𝕣𝕚𝕠" formControlName="usuario"></ion-input>
+                            </ion-item>
+                            <br />
+                            <ion-item>
+                              <ion-icon name="key-outline"></ion-icon>
+
+                                <ion-input name="password" type="password" required placeholder="ℂ𝕠𝕟𝕥𝕣𝕒𝕤𝕖ñ𝕒" formControlName="contraseña"></ion-input>
+                            </ion-item>
+
+                        </ion-list>
+                        <ion-row>
+                            <ion-col>
+                                <ion-button type="submit" fill="solid" expand="full" >
+                                    Iniciar sesion
+                                </ion-button>
+                            </ion-col>
+                            <ion-col>
+                                <ion-button fill="solid" expand="full" [routerLink]="['/registrarse']">
+                                    Registrarse
+                                </ion-button>
+                            </ion-col>
+                            <hr>
+                            <ion-col >
+                              <a [routerLink]="['password']">¿Has olvidado tu Contraseña?</a>
+                            </ion-col>
+                        </ion-row>
+
+                    </form>
+
+                </ion-col>
+            </ion-row>
+
+
+        </ion-grid>
+    </div>
+</ion-slide>
+
+</ion-content>
